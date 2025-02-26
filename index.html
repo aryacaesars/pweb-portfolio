@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Caesar's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="/" class="logo">
+                <img src="logo.svg" alt="Logo" width="40" height="40">
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#why">Why Hire Me?</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+            <a href="#contact" class="contact-button">Contact me</a>
+            <button class="mobile-menu-button" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 12h18M3 6h18M3 18h18"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu" aria-label="Close menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"></path>
+            </svg>
+        </button>
+        <div class="mobile-menu-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#why">Why Hire Me?</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact" class="mobile-contact-button">Contact me</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Arya</span> <span class="italic">Achmad</span> <span>Caesar</span></h1>
+            <div class="hero-image">
+                <img src="Union.svg" alt="Profile" width="516" height="387">
+            </div>
+            <p>A passionate Frontend Developer crafting beautiful web experiences</p>
+            <div class="hero-buttons">
+                <a href="#about" class="button outline">About Me</a>
+                <a href="#project" class="button solid">Discover my project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who am I?</h3>
+                    <p>I'm a passionate Full Stack Developer with a keen interest in building modern web applications. I specialize in creating user-friendly interfaces and robust backend systems.</p>
+                    <div class="education">
+                        <h4>Education & Experience</h4>
+                        <div class="education-items">
+                            <div class="education-item">
+                                <h5>Information Technology</h5>
+                                <p>Siliwangi University</p>
+                                <p class="year">2023 - present</p>
+                            </div>
+                            <div class="education-item">
+                                <h5>Full Stack Developer</h5>
+                                <p>Freelance</p>
+                                <p class="year">2024 - present</p>
+                            </div>
+                            <div class="education-item">
+                                <h5>Graphic Designer Intern</h5>
+                                <p>Undagi</p>
+                                <p class="year">2024 - present</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="pp.jpg" alt="About Me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Me Section -->
+    <section id="why" class="why">
+        <div class="container">
+            <h2>Why Hire Me?</h2>
+            <div class="reasons-grid">
+                <div class="reason-card">
+                    <h3>Creative Problem Solver</h3>
+                    <p>I approach each project with innovative solutions and creative thinking.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Detail Oriented</h3>
+                    <p>I pay attention to every detail to ensure the highest quality output.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Timely Delivery</h3>
+                    <p>I respect deadlines and deliver projects on time, every time.</p>
+                </div>
+                <div class="reason-card">
+                    <h3>Clear Communication</h3>
+                    <p>I maintain clear and consistent communication throughout the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>UI/UX Design</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Frontend Development</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Graphic Design</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Backend Development</span>
+                        <span>68%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 68%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="project" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-categories">
+                <button class="category-button active" data-category="all">All</button>
+                <button class="category-button" data-category="ai">Artificial Intelligence</button>
+                <button class="category-button" data-category="productivity">Productivity</button>
+                <button class="category-button" data-category="product">Product</button>
+                <button class="category-button" data-category="ios">iOS</button>
+                <button class="category-button" data-category="hiring">Hiring</button>
+            </div>
+            <div class="project-carousel">
+                <button class="carousel-button prev">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+                <div class="carousel-container">
+                    <div class="carousel-track"></div>
+                </div>
+                <button class="carousel-button next">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What My Clients Say</h2>
+            <p class="section-description">Don't just take our word for it - hear from some of our satisfied clients</p>
+            <div class="testimonials-carousel">
+                <div class="testimonial-cards"></div>
+                <div class="testimonial-controls">
+                    <button class="testimonial-button prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M15 19l-7-7 7-7"></path>
+                        </svg>
+                    </button>
+                    <button class="testimonial-button next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 5l7 7-7 7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="footer-logo">
+                        <img src="footer-logo.svg" alt="Logo" width="40" height="40">
+                    </a>
+                    <p>Creating digital experiences that make a difference.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#why">Why Hire Me?</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#project">Project</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Arya Design. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
