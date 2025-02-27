@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arya Caesar's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -126,98 +125,125 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills-section">
         <div class="container">
             <h2>My Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>UI/UX Design</span>
-                        <span>50%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 50%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Frontend Development</span>
-                        <span>85%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 85%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Graphic Design</span>
-                        <span>60%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 60%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <div class="skill-header">
-                        <span>Backend Development</span>
-                        <span>68%</span>
-                    </div>
-                    <div class="progress-bar">
-                        <div class="progress" style="width: 68%"></div>
-                    </div>
-                </div>
+            
+            <div class="people-container" id="people-container">
+                <!-- People will be injected here by JavaScript -->
+            </div>
+            
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be injected here by JavaScript -->
             </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
-    <section id="project" class="projects">
+    <section id="project" class="project-section">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-categories">
-                <button class="category-button active" data-category="all">All</button>
-                <button class="category-button" data-category="ai">Artificial Intelligence</button>
-                <button class="category-button" data-category="productivity">Productivity</button>
-                <button class="category-button" data-category="product">Product</button>
-                <button class="category-button" data-category="ios">iOS</button>
-                <button class="category-button" data-category="hiring">Hiring</button>
+          <h2 class="section-title">My Projects</h2>
+          
+          <!-- Mobile Dropdown -->
+          <div class="category-dropdown">
+            <button id="dropdown-btn" class="dropdown-button">
+              <span id="selected-category">All</span>
+              <svg class="icon-chevron-down" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M6 9l6 6l6 -6"></path>
+              </svg>
+            </button>
+            
+            <div id="dropdown-menu" class="dropdown-menu hidden">
+              <!-- Categories will be dynamically added here -->
             </div>
-            <div class="project-carousel">
-                <button class="carousel-button prev">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M15 19l-7-7 7-7"></path>
-                    </svg>
-                </button>
-                <div class="carousel-container">
-                    <div class="carousel-track"></div>
-                </div>
-                <button class="carousel-button next">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+          </div>
+    
+          <!-- Desktop Categories -->
+          <div class="category-tabs">
+            <!-- Categories will be dynamically added here -->
+          </div>
+    
+          <div class="carousel-container">
+            <div id="carousel" class="carousel">
+              <div id="carousel-items" class="carousel-items">
+                <!-- Cards will be dynamically added here -->
+              </div>
             </div>
+            
+            <!-- Navigation buttons -->
+            <div class="carousel-navigation">
+              <button id="scroll-left" class="carousel-button" disabled>
+                <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l14 0"></path>
+                  <path d="M5 12l6 6"></path>
+                  <path d="M5 12l6 -6"></path>
+                </svg>
+              </button>
+              <button id="scroll-right" class="carousel-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none">
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                  <path d="M5 12l14 0"></path>
+                  <path d="M13 18l6 -6"></path>
+                  <path d="M13 6l6 6"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials-section">
         <div class="container">
-            <h2>What My Clients Say</h2>
-            <p class="section-description">Don't just take our word for it - hear from some of our satisfied clients</p>
+            <div class="testimonials-header">
+                <h2>What My Clients Say</h2>
+                <p>Don't just take our word for it - hear from some of our satisfied clients</p>
+            </div>
+            
             <div class="testimonials-carousel">
-                <div class="testimonial-cards"></div>
-                <div class="testimonial-controls">
-                    <button class="testimonial-button prev">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M15 19l-7-7 7-7"></path>
-                        </svg>
-                    </button>
-                    <button class="testimonial-button next">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 5l7 7-7 7"></path>
-                        </svg>
-                    </button>
+                <div class="testimonials-grid">
+                    <div class="testimonial-image-container">
+                        <div class="testimonial-images">
+                            <!-- Images will be dynamically inserted here -->
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-content">
+                        <div class="mobile-controls">
+                            <button class="nav-button prev-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 12H5M12 5l-7 7 7 7"/>
+                                </svg>
+                            </button>
+                            <button class="nav-button next-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="testimonial-text">
+                            <h3 class="testimonial-name"></h3>
+                            <p class="testimonial-designation"></p>
+                            <p class="testimonial-quote"></p>
+                        </div>
+                        
+                        <div class="desktop-controls">
+                            <button class="nav-button prev-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M19 12H5M12 5l-7 7 7 7"/>
+                                </svg>
+                            </button>
+                            <button class="nav-button next-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -292,7 +318,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
 
