@@ -34,39 +34,33 @@ document.querySelectorAll(".mobile-menu-links a").forEach((link) => {
 const people = [
   {
       id: 1,
-      name: "John Doe",
-      designation: "Software Engineer",
-      image: "/pp.jpg"
+      name: "Next.js",
+      image: "assets/next.svg"
   },
   {
       id: 2,
-      name: "Robert Johnson",
-      designation: "Product Manager",
-      image: "/pp.jpg"
+      name: "React.js",
+      image: "assets/react.svg"
   },
   {
       id: 3,
-      name: "Jane Smith",
-      designation: "Data Scientist",
-      image: "/pp.jpg"
+      name: "Git",
+      image: "assets/git.svg"
   },
   {
       id: 4,
-      name: "Emily Davis",
-      designation: "UX Designer",
-      image: "/pp.jpg"
+      name: "Tailwind CSS",
+      image: "assets/tailwind.svg"
   },
   {
       id: 5,
-      name: "Tyler Durden",
-      designation: "Soap Developer",
-      image: "/pp.jpg"
+      name: "Figma",
+      image: "assets/figma.svg"
   },
   {
       id: 6,
-      name: "Dora",
-      designation: "The Explorer",
-      image: "/pp.jpg"
+      name: "V0",
+      image: "assets/v0.svg"
   }
 ];
 
@@ -90,7 +84,6 @@ function renderPeople() {
       tooltip.className = 'tooltip';
       tooltip.innerHTML = `
           <h4>${person.name}</h4>
-          <p>${person.designation}</p>
       `;
       
       const img = document.createElement('img');
@@ -151,43 +144,25 @@ document.addEventListener('DOMContentLoaded', () => {
 // Projects carousel
 document.addEventListener('DOMContentLoaded', () => {
   // Configuration and data
-  const categories = ["All", "Artificial Intelligence", "Productivity", "Product", "iOS", "Hiring"];
+  const categories = ["All", "Landing Page", "E-commerce", "Company Profile Website"];
   const data = [
     {
-      category: "Artificial Intelligence",
-      title: "You can do more with AI.",
-      src: "/pp.jpg",
+      category: "Landing Page",
+      title: "Your Bussines Consultant.",
+      src: "/assets/pp.jpg",
       link: "https://undagicorp.com",
     },
     {
-      category: "Productivity",
-      title: "Enhance your productivity.",
-      src: "/pp.jpg",
-      link: "https://example.com/projects/productivity",
+      category: "E-commerce",
+      title: "Explore the world of fashion.",
+      src: "/assets/pp.jpg",
+      link: "https://sanydressline.my.id",
     },
     {
-      category: "Product",
-      title: "Launching the new Apple Vision Pro.",
-      src: "/pp.jpg",
-      link: "https://example.com/projects/apple-vision-pro",
-    },
-    {
-      category: "Product",
-      title: "Maps for your iPhone 15 Pro Max.",
-      src: "/pp.jpg",
-      link: "https://example.com/projects/iphone-maps",
-    },
-    {
-      category: "iOS",
-      title: "Photography just got better.",
-      src: "/pp.jpg",
-      link: "https://example.com/projects/ios-photography",
-    },
-    {
-      category: "Hiring",
-      title: "Hiring for a Staff Software Engineer",
-      src: "/pp.jpg",
-      link: "https://example.com/projects/hiring",
+      category: "Landing Page",
+      title: "Publish Your Article",
+      src: "/assets/pp.jpg",
+      link: "https://publinesia.com",
     },
   ];
 
@@ -551,19 +526,19 @@ document.addEventListener("DOMContentLoaded", function() {
           name: "Sarah Johnson",
           designation: "UI/UX Designer",
           quote: "Working with this team has been an incredible experience. Their attention to detail and creative solutions exceeded all expectations.",
-          src: "/pp.jpg"
+          src: "/assets/pp.jpg"
       },
       {
           name: "Michael Chen", 
           designation: "Software Engineer",
           quote: "The quality of work and professionalism shown throughout the project was outstanding. I highly recommend their services.",
-          src: "/pp.jpg"
+          src: "/assets/pp.jpg"
       },
       {
           name: "Emma Davis",
           designation: "Product Manager", 
           quote: "They delivered exactly what we needed, on time and within budget. The results have helped transform our business.",
-          src: "/pp.jpg"
+          src: "/assets/pp.jpg"
       }
   ];
 
