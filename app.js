@@ -669,6 +669,7 @@ contactForm.addEventListener("submit", (e) => {
   console.log({
     name: formData.get("name"),
     email: formData.get("email"),
+    phone: formData.get("phone"),
     message: formData.get("message"),
   })
   contactForm.reset()
