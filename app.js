@@ -66,9 +66,9 @@ const people = [
 
 // Skills data
 const skills = [
-  { name: "UI/UX Design", percentage: 50 },
+  { name: "Desain UI/UX", percentage: 50 },
   { name: "Frontend Development", percentage: 85 },
-  { name: "Graphic Design", percentage: 60 },
+  { name: "Desain Grafis", percentage: 60 },
   { name: "Backend Development", percentage: 68 }
 ];
 
@@ -148,20 +148,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const data = [
     {
       category: "Landing Page",
-      title: "Your Bussines Consultant.",
-      src: "/assets/pp.jpg",
+      title: "Website untuk Jasa Konsultan Bisnis",
+      src: "/assets/Frame 2.jpg",
       link: "https://undagicorp.com",
     },
     {
       category: "E-commerce",
-      title: "Explore the world of fashion.",
-      src: "/assets/pp.jpg",
+      title: "Website untuk Butik berbasis Toko Online",
+      src: "/assets/Frame 3.jpg",
       link: "https://sanydressline.my.id",
     },
     {
       category: "Landing Page",
-      title: "Publish Your Article",
-      src: "/assets/pp.jpg",
+      title: "Website untuk Jasa Publikasi Artikel Ilmiah",
+      src: "/assets/Frame 1.jpg",
       link: "https://publinesia.com",
     },
   ];
@@ -523,22 +523,22 @@ document.addEventListener("DOMContentLoaded", function() {
   // Testimonial data
   const testimonials = [
       {
-          name: "Sarah Johnson",
-          designation: "UI/UX Designer",
-          quote: "Working with this team has been an incredible experience. Their attention to detail and creative solutions exceeded all expectations.",
-          src: "/assets/pp.jpg"
+          name: "Hasbi Kosasih",
+          designation: "CEO Undagi",
+          quote: "Arya sangat profesional dalam mengerjakan website perusahaan kami. Hasilnya melebihi ekspektasi dan mampu menyelesaikan proyek tepat waktu.",
+          src: "/assets/undagi.PNG"
       },
       {
-          name: "Michael Chen", 
-          designation: "Software Engineer",
-          quote: "The quality of work and professionalism shown throughout the project was outstanding. I highly recommend their services.",
-          src: "/assets/pp.jpg"
+          name: "Sany", 
+          designation: "Pemilik Toko Online",
+          quote: "Pelayanan yang sangat baik dan komunikatif. Website toko online saya jadi lebih modern dan mudah digunakan oleh customer.",
+          src: "/assets/sany.png"
       },
       {
-          name: "Emma Davis",
-          designation: "Product Manager", 
-          quote: "They delivered exactly what we needed, on time and within budget. The results have helped transform our business.",
-          src: "/assets/pp.jpg"
+          name: "Angga Irawan",
+          designation: "Founder Publinesia", 
+          quote: "Sangat puas dengan hasil website  yang dibuat. Desainnya elegan dan sesuai dengan kebutuhan saya.",
+          src: "/assets/angga.jpg"
       }
   ];
 
