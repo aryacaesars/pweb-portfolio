@@ -691,3 +691,32 @@ function animateSkillBars() {
 window.addEventListener("scroll", animateSkillBars)
 animateSkillBars() // Initial check
 
+// Add these event listeners and functions
+document.addEventListener('DOMContentLoaded', () => {
+  const dropdownBtn = document.getElementById('dropdown-btn');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+  const selectedCategory = document.getElementById('selected-category');
+
+  // Toggle dropdown menu
+  dropdownBtn.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+    dropdownBtn.querySelector('.icon-chevron-down').classList.toggle('rotated');
+  });
+
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!dropdownBtn.contains(e.target) && !dropdownMenu.contains(e.target)) {
+      dropdownMenu.classList.add('hidden');
+      dropdownBtn.querySelector('.icon-chevron-down').classList.remove('rotated');
+    }
+  });
+
+  // Update selected category
+  function selectCategory(category) {
+    selectedCategory.textContent = category;
+    dropdownMenu.classList.add('hidden');
+    dropdownBtn.querySelector('.icon-chevron-down').classList.remove('rotated');
+    // Add your existing category filtering logic here
+  }
+});
+
