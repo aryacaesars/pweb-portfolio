@@ -149,19 +149,19 @@ document.addEventListener('DOMContentLoaded', () => {
     {
       category: "Landing Page",
       title: "Website untuk Jasa Konsultan Bisnis",
-      src: "/assets/Frame 2.jpg",
+      src: "assets/Frame 2.jpg",
       link: "https://undagicorp.com",
     },
     {
       category: "E-commerce",
       title: "Website untuk Butik berbasis Toko Online",
-      src: "/assets/Frame 3.jpg",
+      src: "assets/Frame 3.jpg",
       link: "https://sanydressline.my.id",
     },
     {
       category: "Landing Page",
       title: "Website untuk Jasa Publikasi Artikel Ilmiah",
-      src: "/assets/Frame 1.jpg",
+      src: "assets/Frame 1.jpg",
       link: "https://publinesia.com",
     },
   ];
@@ -526,19 +526,19 @@ document.addEventListener("DOMContentLoaded", function() {
           name: "Hasbi Kosasih",
           designation: "CEO Undagi",
           quote: "Arya sangat profesional dalam mengerjakan website perusahaan kami. Hasilnya melebihi ekspektasi dan mampu menyelesaikan proyek tepat waktu.",
-          src: "/assets/undagi.PNG"
+          src: "assets/undagi.PNG"
       },
       {
           name: "Sany", 
           designation: "Pemilik Toko Online",
           quote: "Pelayanan yang sangat baik dan komunikatif. Website toko online saya jadi lebih modern dan mudah digunakan oleh customer.",
-          src: "/assets/sany.png"
+          src: "assets/sany.png"
       },
       {
           name: "Angga Irawan",
           designation: "Founder Publinesia", 
           quote: "Sangat puas dengan hasil website  yang dibuat. Desainnya elegan dan sesuai dengan kebutuhan saya.",
-          src: "/assets/angga.jpg"
+          src: "assets/angga.jpg"
       }
   ];
 
