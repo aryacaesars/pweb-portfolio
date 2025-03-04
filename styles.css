@@ -234,8 +234,9 @@
   }
   
   .hero h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
   }
   
   @media (min-width: 768px) {
@@ -250,19 +251,32 @@
   }
   
   .hero-image {
-    margin: 2rem auto;
-    max-width: 516px;
+    margin: 1.5rem auto;
+    max-width: 100%; /* Make image container responsive */
+    width: 300px; /* Smaller default width for mobile */
   }
   
   .hero-image img {
     width: 100%;
     height: auto;
+    object-fit: contain;
   }
   
   .hero p {
     color: var(--gray-600);
-    font-size: 1.125rem;
-    margin-bottom: 2rem;
+    font-size: 0.875rem; /* Smaller font for mobile */
+    margin-bottom: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-image {
+      width: 516px; /* Original desktop size */
+      max-width: 90%;
+    }
+  
+    .hero p {
+      font-size: 1.125rem;
+    }
   }
   
   .hero-buttons {
