@@ -1357,3 +1357,48 @@ h2 {
   transform: translateY(-2px);
 }
 
+.popup-success {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup-success .popup-content {
+  background: #fff;
+  color: #222;
+  padding: 2rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  text-align: center;
+  min-width: 260px;
+  position: relative;
+  animation: popup-fadein 0.3s;
+}
+@keyframes popup-fadein {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+.popup-success .popup-icon {
+  margin-bottom: 1rem;
+}
+.popup-success .popup-message {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+.popup-success .popup-close {
+  position: absolute;
+  top: 10px; right: 16px;
+  font-size: 1.5rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.popup-success .popup-close:hover {
+  color: #b71c1c;
+}
+
