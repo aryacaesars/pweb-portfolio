@@ -788,18 +788,39 @@ $(function() {
       `);
       return false;
     } else {
-      // Tampilkan notifikasi sukses
-
-      // Tampilkan popup sukses
-      $('#popup-success').fadeIn(250);
-      this.reset();
-      setTimeout(() => {
-        $('#popup-success').fadeOut(400);
-      }, 2500);
-      // Hilangkan notifikasi setelah 3 detik
-      setTimeout(() => {
-        $('.form-success').fadeOut(400, function() { $(this).remove(); });
-      }, 3000);
+      // Kirim data ke submit_form.php via AJAX
+      $.ajax({
+        url: 'submit_form.php',
+        type: 'POST',
+        data: {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message
+        },
+        success: function(response) {
+          if (response.trim() === 'success') {
+            $('#popup-success').fadeIn(250);
+            $('#contact-form')[0].reset();
+            setTimeout(() => {
+              $('#popup-success').fadeOut(400);
+            }, 2500);
+          } else {
+            $('#contact-form').prepend(`
+              <div class="form-error" style="background:#ffeaea;color:#b71c1c;padding:1rem;border-radius:8px;margin-bottom:1rem;">
+                <b>Gagal:</b> ${response}
+              </div>
+            `);
+          }
+        },
+        error: function() {
+          $('#contact-form').prepend(`
+            <div class="form-error" style="background:#ffeaea;color:#b71c1c;padding:1rem;border-radius:8px;margin-bottom:1rem;">
+              <b>Gagal:</b> Tidak dapat menghubungi server.
+            </div>
+          `);
+        }
+      });
     }
   });
 
